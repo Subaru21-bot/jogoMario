@@ -4,6 +4,7 @@
   "description": "Jogo Mario desenvolvido com HTML, CSS e JavaScript.",
   "private": true,
   "scripts": {
+    "test": "node --test",
     "dev": "vite",
     "build": "vite build"
   },

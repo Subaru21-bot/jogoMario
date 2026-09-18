@@ -38,6 +38,29 @@
     animation: clouds-animation 20s infinite linear;
 }
 
+.game-over-message {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font: bold 42px Arial, sans-serif;
+    text-align: center;
+    text-shadow: 3px 3px 0 #9e1b1b;
+}
+
+.game-over-message span {
+    display: block;
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.game-over-message.visible {
+    display: block;
+}
+
 @keyframes pipe-animation {
     from{
         right: -80px;

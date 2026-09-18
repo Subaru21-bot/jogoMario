@@ -1,5 +1,7 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe')
+const gameOverMessage = document.querySelector('.game-over-message');
+let isGameOver = false;
 
 const jump = () => {
     mario.classList.add('jump');
@@ -25,6 +27,8 @@ const loop = setInterval(() => {
         mario.src = './images/game-over.png'
         mario.style.width = '75px'
         mario.style.marginLeft = '50px'
+        isGameOver = true;
+        gameOverMessage.classList.add('visible');
 
         clearInterval(loop);
 
@@ -32,4 +36,16 @@ const loop = setInterval(() => {
 
 }, 10)
 
-document.addEventListener('keydown', jump);
+const handleKeydown = (event) => {
+    if (isGameOver) {
+        if (event.key === 'Enter') {
+            window.location.reload();
+        }
+
+        return;
+    }
+
+    jump();
+}
+
+document.addEventListener('keydown', handleKeydown);
