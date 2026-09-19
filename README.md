@@ -8,6 +8,17 @@ O **Jogo Mario** é uma aplicação desenvolvida com o objetivo de criar uma exp
 
 O projeto possui uma estrutura organizada, separando a interface da aplicação da parte responsável pela lógica e funcionalidades do sistema.
 
+## Integrantes
+
+| Nome | Matrícula | Papel |
+|----------------|-----------|---------------|
+| Karllyson Paula | 01861379 | Testador |
+| Marconi Farias Araújo | 01783919 | Desenvolvedor |
+| Gustavo Buled Martins | 01797483 | Documentador |
+| Sérgio Luiz dos Santos Neto | 01819969 | Desenvolvedor |
+| Pedro Henrique Rodrigues da Silva | 01794091 | Scrum Master |
+| Janildo Caluête de Farias Júnior | 01799458 | Testador |
+
 ## Estrutura do projeto
 
 ```text
@@ -57,25 +68,25 @@ Acesse o diretório:
 cd jogoMario
 ```
 
-### Executar o Backend
-
-Entre no diretório do backend:
-
-```bash
-cd backend
-```
-
-Instale as dependências necessárias e execute o projeto de acordo com as configurações presentes no diretório.
-
 ### Executar o Frontend
 
-Em outro terminal, acesse o diretório do frontend:
+O Front-End é feito em HTML, CSS e JavaScript puros, sem dependências externas. Acesse o diretório:
 
 ```bash
 cd frontend
 ```
 
-Instale as dependências necessárias e execute a aplicação.
+E abra o arquivo `index.html` diretamente no navegador, ou, de preferência, utilize um servidor local (por exemplo, a extensão **Live Server** do VS Code, ou o comando abaixo):
+
+```bash
+npx serve .
+```
+
+Após abrir a página, pressione qualquer tecla para fazer o personagem pular e desviar do cano que se aproxima.
+
+### Backend
+
+O diretório `backend/` está reservado para futuras funcionalidades do projeto e ainda não possui implementação.
 
 ## Funcionalidades
 
@@ -87,10 +98,9 @@ Instale as dependências necessárias e execute a aplicação.
 
 ## Tecnologias
 
-As tecnologias utilizadas podem ser encontradas nos arquivos de configuração presentes nos diretórios:
-
-* `frontend/`
-* `backend/`
+* HTML5
+* CSS3
+* JavaScript
 
 ## Desenvolvimento
 
